@@ -56,6 +56,27 @@
           </ul>
           <br />
           <ul>
+            <h3>Git Flow Steps (Feature Branching)</h3>
+             <ol>
+              <li>git checkout main | Make "main" the active branch.</li>
+              <li>git checkout -b feature/featureName | Create "feature/featureName" branch and set it as the active branch.</li>
+              <li>git status | Confirm the status of the current branch and display modified files that have not been staged. (No changes should be present on a new feature branch.)</li>
+              <li>*Add/modify code/files.*</li>
+              <li>git add -A | Stage all modified files.</li>
+              <li>git commit -m "Commit message" | Commit modified files/code to the active branch.</li>
+              <li>git pull origin main | Ensure the current branch is up-to-date before opening a PR. (Sync local branch with remote branch.)</li>
+              <li>git push origin feature/featureName | Push all changes.</li>
+              <li>Navigate to GitHub. On the "Code" tab, switch to the feature/featureName branch.</li>
+              <li>Click the "Pull requests" tab. Click "New pull request" button.</li>
+              <li>Set the "base" branch to "main" and the "compare" branch to the feature/featureName branch. Click "Create pull request" button.</li>
+              <li>Write a descriptive message. (Assign a PR reviewer.)</li>
+              <li>Click "Create pull request" button. Click "Merge pull request".</li>
+              <li>git checkout main</li>
+              <li>git pull origin main</li>
+              <li>Close any open issues on GitHub Issues tab.</li>
+             </ol>
+          </ul>
+          <ul>
            <h3>Command Modifiers</h3>
             <li>-A | (git add -A) Stage all modified files. </li>
             <li>-m | (git commit -m "Commit message") | Add a message to a commit.</li>
