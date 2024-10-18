@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -17,6 +18,7 @@
         <h2>HTML</h2>
         <ul>
           <h3>Head and Metadata Tags</h3>
+          <br />
            <li>head | Both an element and a container. This is NOT displayed to users.</li>
            <li>title | Pivitol for SEO and user accessibility technology.</li>
            <li>style | Defines the CSS styles used.</li>
@@ -24,7 +26,9 @@
            <li>link | Connects an external resource to the HTML document.</li>
            <li>meta | Defines the metadata such as the character set, page description, keywords, author, and viewport.</li>
            <li>script | Embeds client-side scripts in the HTML document.</li>
+          <br />
           <h3>Body Tags</h3>
+          <br />
            <li>body | A semantic element and a container, the name of the element describes its contents and role on the webpage. This is displayed to users.</li>
            <li>div | Division on the page.</li>
            <li>span | Inline division on the page.</li>
@@ -39,6 +43,7 @@
            <li>footer | Contains footer information. Use with nested p (paragraph) tag. </li>
            <li>section | Container.</li>
         </ul>
+        <br />
       </section>
    
       <section class="card" id="css-section">
@@ -46,6 +51,9 @@
         <h2>CSS</h2>
         <ul>
           <li><a href="https://bootcampspot.instructure.com/courses/6752/pages/3-dot-2-3-create-the-css-file?module_item_id=1274557">Bootcamp CSS Module</a></li>
+          <br />
+          <h3>CSS Methodologies</h3>
+          <br />
           <li>There are 3 ways to style a webpage using CSS:
             <ol>
               <li>Inline | Applies style rules to a specific HTML tag to style a particular page element only.</li>
@@ -55,17 +63,28 @@
                 </ul>
               <li>Internal | Applies style rules for the webpage in the "head" element of the HTML file.</li>
               <ul>
-                <li>Usses CSS classes and IDs to identify elements to which styling rules will be applied.</li>
+                <li>Uses CSS classes and IDs to identify elements to which styling rules will be applied.</li>
                 <li>Changes applied to the CSS styling rules in the head element will apply to all tags associated with that rule.</li>
               </ul>
               <li>External | Applies style rules in a separate file using a "link" element.</li>
               <ul>
                 <li>This is the preferred and most common CSS styling methodology.</li>
-                <li>This allows all styling to be contained in its own file, and edits made will affect all linked elements.</li>
+                <li>This allows all styling to be contained within its own file, and edits made will affect all linked elements.</li>
+                <li>Requires a link element</li>
               </ul>
             </ol>
-          </li>
+          <br />
+       <li>[Git Bash] git touch style.css | Used to create a new file for CSS code. Keep this file in the assets directory within the main repo.</li>
+       <li>After CSS styling rules have been set on the style sheet, add the link element to the head element of the HTML file. (link rel="stylesheet" href="./assets/style.css")</li>
+       <li>Important Definititions:</li>
+            <ul>
+              <li>Margin: A margin property indicates how much space we want around the outside of an element. "0" indicates that there will be no buffer zone around the element.</li>
+              <li>Padding: A padding property adds space around the content inside of an element. When the padding is increased, so too is the size of the element.</li>
+            </ul>
+       <li>To apply a rule to all elements on the page, use "*" (asterisk). This is known as a "special wild card symbol".</li>
+       <li><a href="https://bootcampspot.instructure.com/courses/6752/pages/3-dot-2-3-create-the-css-file?module_item_id=1274557">Link to Bootcamp CSS code review page.</a></li>
         </ul>
+        <br />
       </section>
    
       <section class="card" id="git-section">
@@ -73,10 +92,13 @@
         <h2>Git</h2>
           <ul>  
            <h3>Documentation</h3>
+           <br />
             <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">GitHub Education: Git Cheat Sheet</a></li>
           </ul>
           <ul>
+          <br />
             <h3>Git Flow Steps (Feature Branching)</h3>
+          <br />
              <ol>
               <li>[Git Bash] git checkout main | Make "main" the active branch.</li>
               <li>[Git Bash] git checkout -b feature/featureName | Create "feature/featureName" branch and set it as the active branch.</li>
@@ -98,28 +120,37 @@
              </ol>
           </ul>
           <ul>
+           <br />
            <h3>Command Modifiers</h3>
+           <br />
             <li>-A | (git add -A) Stage all modified files. </li>
             <li>-m | (git commit -m "Commit message") | Add a message to a commit.</li>
           </ul>
           <ul>
+           <br />
            <h3>Setup and Initialization</h3>
+           <br />
             <li>git init | Initialize an existing directory as a Git repo.</li>
             <li>git clone [URL] | Retreive an entire repo from a hosted location via URL.</li>
-           <h3>Staging, Snapshotting, and Committing Changes</h3>
+          <br />
+            <h3>Staging, Snapshotting, and Committing Changes</h3>
+            <br />
             <li>git status | Show modified files in working directory, staged for next commit.</li>
             <li>git add [file] | Add a file as it looks now to the next commit. (Stage a file for commit.)</li>
             <li>git reset [file] | Unstage a file while retaining file changes in the working directory.</li>
             <li>git diff | List files that have been edited but have not yet been staged.</li>
             <li>git diff --staged | List of files that have been staged but not yet committed.</li>
             <li>git commit -m "[Descriptive message] | Commit staged content as a new commit snapshot. </li>
-           <h3>Branching and Merging</h3>
+          <br />
+            <h3>Branching and Merging</h3>
+            <br />
             <li>git branch | Lists branches. An asterisk (*) will appear next to the currently active branch.</li>
             <li>git branch [branch-name] | Create a new branch at the current commit.</li>
             <li>git checkout | Switch to another branch and check it out into your working directory.</li>
             <li>git merge [branch] | Merge the specified branch's history into the current one.</li>
             <li>git log | Show all commits in the current branch's history.</li>
            </ul>
+           <br />
       </section>
    
       <section class="card" id="javascript-section">
@@ -128,13 +159,15 @@
           <ul>
             <li>Enter Javascript notes here.</li>
           </ul>
+          <br />
       </section>
     </main>
     
     <br />
 
     <footer>
-      <p>I can code!</p>
+    <br />
+      <p style="font-size: 40px;">I can code!</p>
     </footer>
   </body>
 </html>
