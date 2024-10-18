@@ -12,8 +12,86 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <ul>
+          <h3>Head and Metadata Tags</h3>
+           <li>head | Both an element and a container. This is NOT displayed to users.</li>
+           <li>title | Pivitol for SEO and user accessibility technology.</li>
+           <li>style | Defines the CSS styles used.</li>
+           <li>base | The base URL for the app.</li>
+           <li>link | Connects an external resource to the HTML document.</li>
+           <li>meta | Defines the metadata such as the character set, page description, keywords, author, and viewport.</li>
+           <li>script | Embeds client-side scripts in the HTML document.</li>
+           <br />
+          <h3>Body Tags</h3>
+           <li>body | A semantic element and a container, the name of the element describes its contents and role on the webpage. This is displayed to users.</li>
+           <li>div | Division on the page.</li>
+           <li>span | Inline division on the page.</li>
+           <li>h1, h2, ..., h6 | Header styles. Each page should only use h1 once, and header styles should be used in sequence (h1 -> h2 -> h3, etc.).</li>
+           <li>p | Denotes a paragraph.</li>
+           <li>ul/ol | Unordered/Ordered list.</li>
+           <li>li | List item (nested within ul/ol)</li>
+           <li>img | Image element that can contain the following attributes: "src" for the imageUrl, "alt" for the imageNameAndDescription, "width", and "height".</li>
+           <li>br / | Line Break</li>
+           <li>a | Hyperlink (Anchor). Contains href="linkedUrl">linkDescription.</li>
+           <li>main</li>
+           <li>footer | Contains footer information. Use with nested p (paragraph) tag. </li>
+           <li>section | Container.</li>
+        </ul>
+      </section>
+   
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>Enter CSS notes here.</li>
+        </ul>
+      </section>
+   
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+          <ul>  
+           <h3>Documentation</h3>
+            <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">GitHub Education: Git Cheat Sheet</a></li>
+          </ul>
+          <br />
+          <ul>
+           <h3>Command Modifiers</h3>
+            <li>-A | (git add -A) Stage all modified files. </li>
+            <li>-m | (git commit -m "Commit message") | Add a message to a commit.</li>
+          </ul>
+          <br />
+          <ul>
+           <h3>Setup and Initialization</h3>
+            <li>git init | Initialize an existing directory as a Git repo.</li>
+            <li>git clone [URL] | Retreive an entire repo from a hosted location via URL.</li>
+          <br />
+           <h3>Staging, Snapshotting, and Committing Changes</h3>
+            <li>git status | Show modified files in working directory, staged for next commit.</li>
+            <li>git add [file] | Add a file as it looks now to the next commit. (Stage a file for commit.)</li>
+            <li>git reset [file] | Unstage a file while retaining file changes in the working directory.</li>
+            <li>git diff | List files that have been edited but have not yet been staged.</li>
+            <li>git diff --staged | List of files that have been staged but not yet committed.</li>
+            <li>git commit -m "[Descriptive message] | Commit staged content as a new commit snapshot. </li>
+          <br />
+           <h3>Branching and Merging</h3>
+            <li>git branch | Lists branches. An asterisk (*) will appear next to the currently active branch.</li>
+            <li>git branch [branch-name] | Create a new branch at the current commit.</li>
+            <li>git checkout | Switch to another branch and check it out into your working directory.</li>
+            <li>git merge [branch] | Merge the specified branch's history into the current one.</li>
+            <li>git log | Show all commits in the current branch's history.</li>
+           </ul>
+      </section>
+   
+      <section class="card" id="javascript-section">
+        <h2>Javascript</h2>
+          <ul>
+            <li>Enter Javascript notes here.</li>
+          </ul>
+      </section>
     </main>
+    
+    <br />
 
     <footer>
       <p>I can code!</p>
