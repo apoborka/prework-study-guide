@@ -11,6 +11,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -91,13 +92,13 @@
         <br />
         <h2>Git</h2>
           <ul>  
-           <h3>Documentation</h3>
-           <br />
+          <h3>Documentation</h3>
+          <br />
             <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">GitHub Education: Git Cheat Sheet</a></li>
           </ul>
           <ul>
           <br />
-            <h3>Git Flow Steps (Feature Branching)</h3>
+          <h3>Git Flow Steps (Feature Branching)</h3>
           <br />
              <ol>
               <li>[Git Bash] git checkout main | Make "main" the active branch.</li>
@@ -120,21 +121,21 @@
              </ol>
           </ul>
           <ul>
-           <br />
-           <h3>Command Modifiers</h3>
-           <br />
+          <br />
+          <h3>Command Modifiers</h3>
+          <br />
             <li>-A | (git add -A) Stage all modified files. </li>
             <li>-m | (git commit -m "Commit message") | Add a message to a commit.</li>
           </ul>
           <ul>
-           <br />
-           <h3>Setup and Initialization</h3>
-           <br />
+          <br />
+          <h3>Setup and Initialization</h3>
+          <br />
             <li>git init | Initialize an existing directory as a Git repo.</li>
             <li>git clone [URL] | Retreive an entire repo from a hosted location via URL.</li>
           <br />
-            <h3>Staging, Snapshotting, and Committing Changes</h3>
-            <br />
+          <h3>Staging, Snapshotting, and Committing Changes</h3>
+          <br />
             <li>git status | Show modified files in working directory, staged for next commit.</li>
             <li>git add [file] | Add a file as it looks now to the next commit. (Stage a file for commit.)</li>
             <li>git reset [file] | Unstage a file while retaining file changes in the working directory.</li>
@@ -142,8 +143,8 @@
             <li>git diff --staged | List of files that have been staged but not yet committed.</li>
             <li>git commit -m "[Descriptive message] | Commit staged content as a new commit snapshot. </li>
           <br />
-            <h3>Branching and Merging</h3>
-            <br />
+          <h3>Branching and Merging</h3>
+          <br />
             <li>git branch | Lists branches. An asterisk (*) will appear next to the currently active branch.</li>
             <li>git branch [branch-name] | Create a new branch at the current commit.</li>
             <li>git checkout | Switch to another branch and check it out into your working directory.</li>
@@ -156,21 +157,80 @@
       <section class="card" id="javascript-section">
         <br />
         <h2>JavaScript</h2>
-        <ul>  
+          <ul>  
           <h3>Documentation</h3>
           <br />
-           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN: JavaScript Basics</a></li>
-           <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">MDN: JavaScript Data Types</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN: JavaScript Basics</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">MDN: JavaScript Data Types</a></li>
           </ul>
-         <ul>
-         <br />
-         <h3>Section Header 1</h3>
-         <br>
           <ul>
-            <li>Enter Javascript notes here.</li>
-          </ul>
-
           <br />
+          <h3>Variables</h3>
+          <br>
+            <ul>
+              <li>const | Variable container that cannot be re-assigned.</li>
+              <li>var | Outdated syntax. Allows for value re-assignment.</li>
+              <li>let | Variable container that can be re-assigned as needed.</li>
+            </ul>
+          <br />
+          <h3>Terminology</h3>
+          <br />
+            <ul>
+              <li>"Variable" - A named container that allows us to store data in our code.</li>
+              <li>"Method" - A set of instructions that can be executed by a computer.</li>
+              <li>"Control Flow" - The order in which a computer executes code in a script.</li>
+            </ul>
+          <br />
+          <h3>Linking script.js to the index</h3>
+          <br />
+            <ul>
+              <li>The script code ("script src="./assets/script.js") must be added to the footer and above the closing element for the body.</li>
+            </ul>
+          <br />
+          <h3>Truthy v. Falsy</h3>
+          <br />
+            <ul>
+              <li>Falsy: A value is considered Falsy if it one of the following values:</li>
+                <ul>
+                  <li>0</li>
+                  <li>-0</li>
+                  <li>On</li>
+                  <li>""</li>
+                  <li>null</li>
+                  <li>undefined</li>
+                  <li>NaN</li>
+                </ul>
+              <li>Truthy: All other values than those mentioned above, including a Boolean with the value of "true", are considered Truthy.</li>
+            </ul>
+          <br />
+          <h3>Equality Operators</h3>
+          <br />
+            <ul>
+              <li>= | Equals</li>
+              <li>=== | Check to see if two values are equal and returns true/false.</li>
+            </ul>
+          <br />
+          <h3>FOR Loops</h3>
+          <br />
+            <ul>
+              <li>A FOR loop contains three important statements:</li>
+                <ol>
+                  <li>A starting point: let x = 0; (0 = the starting point of the array)</li>
+                  <li>A condition: x (less than) shapes.length; (as long as the variable 'x' is less than the length of the array, the loop continues.)</li>
+                  <li>Iteration over each item: x++; (shorthand for x+1.)</li>
+                </ol>
+              <li>The full 'for' loop will appear as such: for(let x = 0; x < shapes.length; x++) {
+              <br />
+              }
+              </li>
+            </ul>
+            <br />
+            <h3>Functions</h3>
+            <br />
+              <ul>
+                <li>Functions are DEFINED, the CALLED below (due to Control Flow).</li>
+                <li>"Uncaught ReferenceError: "varName" is not defined" - Check that the function is called AFTER being defined.</li>
+              </ul>
       </section>
     </main>
     
@@ -180,5 +240,6 @@
     <br />
       <p style="font-size: 40px;">I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
